@@ -8,6 +8,7 @@
     </head>
 
     <body>
+       
         <header class="mb-4">
             <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
                 {{-- トップページへのリンク --}}
@@ -26,8 +27,13 @@ btn-primary"]) !!}
                 </div>
             </nav>
         </header>
+        
+        
 
         <div class="container">
+            
+            @include("commons.error_tasks")
+            
             @yield('content')
         </div>
 
